@@ -1,0 +1,49 @@
+<div id = "text">
+
+  <h2>Solve under-determined linear systems iteratively</h2>
+
+  [http://en.wikipedia.org/wiki/Iteratively_reweighted_least_squares
+  IRLS] can be used to solve an under-determined linear system (i.e.,
+  $Au=b$ with fewer rows than columns) when $x$ is minimized according
+  to some norm $||\cdot||_p$. This has applications, for example, in
+  [http://en.wikipedia.org/wiki/Compressed_sensing compressive
+  sensing] with $p=0$ and $p=1$ ([b007z tutorial]).
+
+  The algorithm below is from
+  [http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.154.8360,
+  this paper] and for minimum $||u||_0$ (i.e. $p=0$) solves
+
+  $$
+  \begin{bmatrix}
+  1 & 0 & 1 \\ 1+j & 3 &0
+  \end{bmatrix}
+  u=
+  \begin{bmatrix}
+  1 \\ 1+j
+  \end{bmatrix}
+  $$
+
+  (feel free to edit the code, computation is instant!). By inspection
+  the solution is just $[1~0~0]^T$ (since the $p=0$ norm counts the
+  number of non-zero elements).  The interesting thing (for
+  compressive sensing at least) is that the solution is (nearly) the
+  same for $p=1$ but very different for $p=2$.
+
+  Octave and Python code is [TBD, here].  
+
+  Find out about Web Labs (blabs) [TBD, here].
+
+  <hr/>
+  
+  <br/>
+  
+  <div class="left_col">
+    <div data-file="main.coffee"></div>
+  </div>    
+
+  <div class="right_col">
+    <div data-eval="main.coffee"></div>
+  </div>
+
+</div>
+

@@ -1,0 +1,21 @@
+#text {
+    width: 960px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+}
+
+.left_col {
+    float: left;
+    width: 450px;
+}
+
+.right_col {
+    float: right;
+    width: 450px;
+}
+
+.clear {
+    clear: both;
+}
+
+
