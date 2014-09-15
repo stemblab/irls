@@ -1,0 +1,9 @@
+test "complex input", (assert) -> 
+
+    A = complex [[1, 0, 1],[1, 3, 0]], [[0, 0, 0],[1, 0, 0]] 
+    b = complex [[1],[1]], [[0],[1]]
+    correct = complex [[1], [0], [0]], [[0], [0], [0]]
+    {ul, k} = $blab.irls(A, b)
+    assert.ok (ul-correct).norm2() < nm.epsilon
+
+
