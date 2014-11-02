@@ -61,5 +61,3 @@ $blab.irls = (A, b) ->
         ul = un
 
     {ul, k}
-
-
