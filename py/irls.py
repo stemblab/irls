@@ -5,7 +5,7 @@ import numpy.linalg as la
 import time
 
 # $\epsilon$-regularized IRLS solution to $\Phi u =b$ 
-# See http://www.puzlet.com/?id=b007h
+# http://stemblab.github.io/irls
  
 # $\LaTeX$ definitions
 # brackets: $$\def\lr#1{\left(#1\right)}$$
